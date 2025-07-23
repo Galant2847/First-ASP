@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|c:\\users\\redmi\\source\\repos\\firstasp\\firstasp\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|solutionrelative:firstasp\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|c:\\users\\redmi\\source\\repos\\firstasp\\firstasp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|solutionrelative:firstasp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|c:\\users\\redmi\\source\\repos\\firstasp\\firstasp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|solutionrelative:firstasp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|c:\\users\\redmi\\source\\repos\\firstasp\\firstasp\\migrations\\firstapicontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75076A2-BA79-4CB8-9DB7-AE0B3E7D1BC4}|FirstASP\\FirstASP.csproj|solutionrelative:firstasp\\migrations\\firstapicontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "FirstASP\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Models\\Book.cs",
+              "RelativeToolTip": "FirstASP\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T15:27:32.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FirstAPIContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Migrations\\FirstAPIContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "FirstASP\\Migrations\\FirstAPIContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Migrations\\FirstAPIContextModelSnapshot.cs",
+              "RelativeToolTip": "FirstASP\\Migrations\\FirstAPIContextModelSnapshot.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T15:27:26.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "FirstASP\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "FirstASP\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAIAwwC4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T15:27:18.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Program.cs",
+              "RelativeDocumentMoniker": "FirstASP\\Program.cs",
+              "ToolTip": "C:\\Users\\Redmi\\source\\repos\\FirstASP\\FirstASP\\Program.cs",
+              "RelativeToolTip": "FirstASP\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T15:02:35.935Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
