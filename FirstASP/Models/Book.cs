@@ -3,31 +3,24 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FirstASP.Models
 {
-    public class Book
+    public class Book : BookDto
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
-        [StringLength(100)]
-        public string Title { get; set; } = null!;
-
-        [StringLength(50)]
-        public string Author { get; set; } = null!;
-
-        [Range(0, 2100)]
-        public int YearPublished { get; set; }
     }
-    public class CreateBookDto
+    public class BookDto
     {
-        [Required]
-        [StringLength(100)]
-        public string Title { get; set; }
+        [StringLength(100, ErrorMessage = "Максимальная длина = 100 символов")]
+        [Required(ErrorMessage = "Название обязательно")]
+        public required string Title { get; set; }
+        
 
-        [Required]
         [StringLength(50)]
-        public string Author { get; set; }
-
-        [Range(0, 2100)]
+        [Required(ErrorMessage = "ФИО автора обязательно")]
+        public required string Author { get; set; }
+        
+        
+        [Range(1, int.MaxValue, ErrorMessage = "Год должен быть положительным")]
         public int YearPublished { get; set; }
     }
 }
