@@ -9,16 +9,16 @@ public class User
     
     [Required]
     [StringLength(50)]
-    public required string Username { get; set; }
+    public required string Username { get; init; }
     
     [Required]
     [EmailAddress]
     public required string Email { get; init; }
     
     [Required]
-    public required string HashPassword { get; set; }
+    public required string HashPassword { get; init; }
     
-    public bool IsEmailVerified { get; set; } = false;
+    public bool IsEmailVerified { get; set; }
     public string? EmailVerificationCode { get; set; }
     public DateTime? EmailVerificationCodeExpiry { get; set; }
 
@@ -48,4 +48,9 @@ public class RegisterDto
     ErrorMessage = "Длина пароля должна быть от 8 символов")]   
     [DefaultValue("password")]
     [Required] public required string Password { get; set; }
+}
+public class VerifyEmailDto
+{
+    [Required][EmailAddress] public string Email { get; set; }
+    [Required][StringLength(6, MinimumLength = 6)] public string Code { get; set; }
 }

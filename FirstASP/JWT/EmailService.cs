@@ -1,7 +1,10 @@
+using FirstASP.Infrastructure;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
 using MimeKit.Text;
+
+namespace FirstASP.JWT;
 
 public class EmailService(IConfiguration config, ILogger<EmailService> logger) : IEmailService
 {
@@ -41,7 +44,7 @@ public class EmailService(IConfiguration config, ILogger<EmailService> logger) :
                 settings["Password"]);
             
             await client.SendAsync(message);
-            logger.LogInformation($"Verification email sent to {email}");
+            logger.LogInformation("Verification email sent to {Email}", email);
         }
         catch (Exception ex)
         {

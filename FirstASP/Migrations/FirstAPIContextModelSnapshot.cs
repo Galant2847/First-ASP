@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FirstASP.Migrations
 {
-    [DbContext(typeof(FirstAPIContext))]
+    [DbContext(typeof(FirstApiContext))]
     partial class FirstAPIContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
