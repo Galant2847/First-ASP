@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FirstASP.Migrations
 {
-    [DbContext(typeof(FirstAPIContext))]
+    [DbContext(typeof(FirstApiContext))]
     [Migration("20250810165237_Init")]
     partial class Init
     {

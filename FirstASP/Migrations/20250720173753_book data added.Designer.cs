@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FirstASP.Migrations
 {
-    [DbContext(typeof(FirstAPIContext))]
+    [DbContext(typeof(FirstApiContext))]
     [Migration("20250720173753_book data added")]
     partial class bookdataadded
     {

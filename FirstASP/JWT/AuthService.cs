@@ -3,14 +3,15 @@ using FirstASP.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using FirstASP.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 namespace FirstASP.JWT;
 
-public class AuthService(FirstAPIContext context, IEmailService emailService, IConfiguration configuration)
+public class AuthService(FirstApiContext context, IEmailService emailService, IConfiguration configuration)
 {
-    public async Task RegisterUser(RegisterDto request, bool isAdmin = false)
+    public async Task RegisterUser(RegisterDto request)
     {
         if (context.Users.Any(x => x.Username == request.Username))
             throw new Exception("User already exists");
@@ -25,7 +26,7 @@ public class AuthService(FirstAPIContext context, IEmailService emailService, IC
             HashPassword = BCrypt.Net.BCrypt.HashPassword(request.Password),
             IsEmailVerified = false,
             EmailVerificationCode = GenerateVerificationCode(),
-            EmailVerificationCodeExpiry = DateTime.UtcNow.AddHours(24)
+            EmailVerificationCodeExpiry = DateTime.UtcNow.AddMinutes(5)
         };
 
         context.Users.Add(user);
@@ -110,7 +111,7 @@ public class AuthService(FirstAPIContext context, IEmailService emailService, IC
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
     
-    private string GenerateVerificationCode()
+    private static string GenerateVerificationCode()
     {
         return new Random().Next(100000, 999999).ToString(); // 6-значный код
     }

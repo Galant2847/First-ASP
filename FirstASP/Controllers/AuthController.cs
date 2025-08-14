@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using FirstASP.Data;
 using FirstASP.JWT;
 using FirstASP.Models;
@@ -8,7 +7,7 @@ namespace FirstASP.Controllers;
 
 [ApiController]
 [Route("api/auth")]
-public class AuthController(AuthService authService, FirstAPIContext context) : ControllerBase
+public class AuthController(AuthService authService, FirstApiContext context) : ControllerBase
 {
     // регистрация пользователя
     [HttpPost("register")]
@@ -74,12 +73,6 @@ public class AuthController(AuthService authService, FirstAPIContext context) : 
         return isVerified 
             ? Ok("Email успешно подтверждён") 
             : BadRequest("Неверный код или срок действия истёк");
-    }
-
-    public class VerifyEmailDto
-    {
-        [Required][EmailAddress] public string Email { get; set; }
-        [Required][StringLength(6, MinimumLength = 6)] public string Code { get; set; }
     }
 
     /*[HttpPost("createAdmin")]
