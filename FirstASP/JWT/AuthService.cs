@@ -115,19 +115,4 @@ public class AuthService(FirstApiContext context, IEmailService emailService, IC
     {
         return new Random().Next(100000, 999999).ToString(); // 6-значный код
     }
-
-    /*public void CreateAdmin()
-    {
-        var admin = new User
-        {
-            Username = "karim",
-            HashPassword = BCrypt.Net.BCrypt.HashPassword("d67nkHUUK4"),
-            Role = "admin",
-            Email = "abdullinkarim420@gmail.com",
-            IsEmailVerified = true
-        };
-        
-        context.Users.Add(admin);
-        context.SaveChanges();
-    }*/
 }
