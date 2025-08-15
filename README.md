@@ -17,7 +17,7 @@ ASP.NET Core Web API для управления книгами с JWT-ауте�
 ### ⚙️ Настройка  
 1. **Склонируйте репозиторий**  
    ```bash  
-   git clone https://github.com/ваш-username/bookstore-api.git  
+   git clone https://github.com/Galant2847/First-ASP.git  
    ```  
 
 2. **Настройте конфигурацию**  
